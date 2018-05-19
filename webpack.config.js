@@ -3,7 +3,8 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: "development",
-    entry: "./src/game.js",
+    entry: "./src/game.ts",
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, "./dist/"),
         filename: "game.bundle.js"
@@ -16,22 +17,10 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js?$/,
+                test: /\.ts|\.tsx$/,
                 include: path.resolve(__dirname, "./src"),
-                loader: "babel-loader",
-                options: {
-                    presets: ["env"]
-                }
-            },
-            {
-                test: /\.html$/,
-                include: path.resolve(__dirname, "./src"),
-                use: [
-                    "htmllint-loader",
-                    {
-                        loader: "html-loader",
-                    }
-                ]
+                use: 'awesome-typescript-loader',
+                exclude: /node_modules/
             }
         ]
     },

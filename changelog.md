@@ -12,3 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   * Webpack
   * Dev server
   * Phaser 3 
+* TS support
+  * Defs for Phaser 3
+  * tsconfig
+
+### Changed
+* webpack config to support TS transpile

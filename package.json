@@ -7,11 +7,14 @@
     "start": "webpack-dev-server --hot --inline"
   },
   "dependencies": {
+    "awesome-typescript-loader": "^5.0.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
     "phaser": "^3.8.0",
+    "ts-loader": "^4.3.0",
+    "typescript": "^2.8.3",
     "webpack": "^4.8.3",
     "webpack-dev-server": "^3.1.4"
   },
