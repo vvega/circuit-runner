@@ -1,0 +1,1 @@
+window.onload = () => console.log("hello world2356789")
