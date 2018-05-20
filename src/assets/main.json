@@ -1,0 +1,156 @@
+{"frames": [
+
+{
+	"filename": "back1.png",
+	"frame": {"x":1831,"y":2061,"w":149,"h":349},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":149,"h":349},
+	"sourceSize": {"w":149,"h":349}
+},
+{
+	"filename": "back2.png",
+	"frame": {"x":1103,"y":2061,"w":337,"h":629},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":337,"h":629},
+	"sourceSize": {"w":337,"h":629}
+},
+{
+	"filename": "back3.png",
+	"frame": {"x":579,"y":1027,"w":459,"h":990},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":459,"h":990},
+	"sourceSize": {"w":459,"h":990}
+},
+{
+	"filename": "back4.png",
+	"frame": {"x":1040,"y":1027,"w":388,"h":657},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":388,"h":657},
+	"sourceSize": {"w":388,"h":657}
+},
+{
+	"filename": "bg.png",
+	"frame": {"x":1,"y":1,"w":576,"h":1024},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":576,"h":1024},
+	"sourceSize": {"w":576,"h":1024}
+},
+{
+	"filename": "bubble.png",
+	"frame": {"x":1157,"y":794,"w":58,"h":58},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":58,"h":58},
+	"sourceSize": {"w":58,"h":58}
+},
+{
+	"filename": "filmgrain.png",
+	"frame": {"x":1,"y":1027,"w":576,"h":1024},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":576,"h":1024},
+	"sourceSize": {"w":576,"h":1024}
+},
+{
+	"filename": "flare1.png",
+	"frame": {"x":723,"y":2692,"w":948,"h":257},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":346,"w":948,"h":257},
+	"sourceSize": {"w":948,"h":948}
+},
+{
+	"filename": "flare3.png",
+	"frame": {"x":1442,"y":2061,"w":387,"h":387},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":281,"y":281,"w":387,"h":387},
+	"sourceSize": {"w":948,"h":948}
+},
+{
+	"filename": "front1.png",
+	"frame": {"x":1157,"y":1,"w":435,"h":791},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":435,"h":791},
+	"sourceSize": {"w":435,"h":791}
+},
+{
+	"filename": "front2.png",
+	"frame": {"x":723,"y":2019,"w":378,"h":658},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":378,"h":658},
+	"sourceSize": {"w":378,"h":658}
+},
+{
+	"filename": "front3.png",
+	"frame": {"x":1594,"y":1,"w":341,"h":810},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":341,"h":810},
+	"sourceSize": {"w":341,"h":810}
+},
+{
+	"filename": "front5.png",
+	"frame": {"x":1,"y":2053,"w":425,"h":808},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":425,"h":808},
+	"sourceSize": {"w":425,"h":808}
+},
+{
+	"filename": "mid1.png",
+	"frame": {"x":1430,"y":1464,"w":570,"h":595},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":570,"h":595},
+	"sourceSize": {"w":570,"h":595}
+},
+{
+	"filename": "mid2.png",
+	"frame": {"x":428,"y":2053,"w":293,"h":789},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":0,"w":293,"h":789},
+	"sourceSize": {"w":342,"h":789}
+},
+{
+	"filename": "mid3.png",
+	"frame": {"x":1430,"y":813,"w":498,"h":649},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":498,"h":649},
+	"sourceSize": {"w":498,"h":649}
+},
+{
+	"filename": "splash.png",
+	"frame": {"x":579,"y":1,"w":576,"h":1024},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":576,"h":1024},
+	"sourceSize": {"w":576,"h":1024}
+},
+{
+	"filename": "text_gameover.png",
+	"frame": {"x":1,"y":2863,"w":523,"h":68},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":523,"h":68},
+	"sourceSize": {"w":523,"h":68}
+}],
+"meta": {
+	"app": "http://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "main.png",
+	"format": "RGBA8888",
+	"size": {"w":2001,"h":2950},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:1ee4a1f801c6f600e4066bc30d7822f4:5e954f367baeedfac67561ca375bb86f:03f91ab73e0f4667800419161e658c40$"
+}
+}

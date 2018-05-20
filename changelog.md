@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   * Defs for Phaser 3
   * tsconfig
 * Scene types
+* Test assets
 
 ### Changed
 * webpack config to support TS transpile
