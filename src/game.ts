@@ -1,7 +1,7 @@
 import * as Phaser from "./../node_modules/phaser/dist/phaser.js";
-import { LoadScene } from "./scenes/load";
-import { PlayScene } from "./scenes/play";
-import { EndScene } from "./scenes/end";
+import { LoadScene } from "./scenes/preloader";
+import { PlayScene } from "./scenes/gameplay";
+import { EndScene } from "./scenes/endcard";
 
 class CircuitRunner extends Phaser.Game {
     container: any;
@@ -9,15 +9,16 @@ class CircuitRunner extends Phaser.Game {
 
     constructor(config: any) {
         super(config);
-        this.scene.add("load", LoadScene, true);
-        this.scene.add("play", PlayScene);
-        this.scene.add("end", EndScene);
+        this.scene.add("preloader", LoadScene, true);
+        this.scene.add("gameplay", PlayScene);
+        this.scene.add("endcard", EndScene);
     }
 }
 
 let game: CircuitRunner = new CircuitRunner({
     width: 450,
-    height: 720
+    height: 720,
+    backgroundColor: "#fff"
 });
 
 export { game }

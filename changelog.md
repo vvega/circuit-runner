@@ -17,8 +17,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
   * tsconfig
 * Scene types
 * Test assets
+* Parallax layers
 
 ### Changed
 * webpack config to support TS transpile
 * Update .gitignore to exclude .vscode directory
 * Scenes defined on game construction
+* Refactor to support scene-based layers
