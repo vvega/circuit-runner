@@ -1,5 +1,6 @@
 let path = require("path");
 let HtmlWebpackPlugin = require('html-webpack-plugin');
+let CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: "development",
@@ -12,8 +13,12 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Circuit Runner'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/assets', to: './dist/assets' }
+        ])
     ],
+    
     module: {
         rules: [
             {
