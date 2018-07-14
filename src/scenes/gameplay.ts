@@ -1,21 +1,24 @@
 import * as Phaser from "./../../node_modules/phaser/dist/phaser.js";
 import { ParallaxScene } from "./parallax/parallax";
-import { ParallaxLayer } from "./parallax/layer";
+import { Runner } from "./../entities/world/runner";
 import { LayerData } from "./parallax/layerData";
 import { game } from "./../game";
 
 export class PlayScene extends Phaser.Scene {
+    bg: ParallaxScene;
+    runner: Runner;
 
     constructor() {
         super({});
     }
 
     preload() {
-        console.log("playing");
-        game.scene.add("bg", new ParallaxScene(LayerData), true);
+        this.bg = new ParallaxScene(LayerData);
+        game.scene.add("bg", this.bg, true);
     }
 
     create() {
         game.scene.start("bg");
+        this.bg.add.existing(new Runner(this, 160, 400));
     }
 }

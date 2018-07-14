@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Test assets
 * Parallax layers
 * Rudimentary parallax movement
+* Runner
 
 ### Changed
 * webpack config to support TS transpile

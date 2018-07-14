@@ -150,7 +150,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../data/main.json</filename>
+                <filename>main.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -342,6 +342,32 @@
                 <rect>106,202,213,404</rect>
                 <key>scale9Paddings</key>
                 <rect>106,202,213,404</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">main/guy/jump/01.png</key>
+            <key type="filename">main/guy/jump/02.png</key>
+            <key type="filename">main/guy/jump/03.png</key>
+            <key type="filename">main/guy/jump/04.png</key>
+            <key type="filename">main/guy/jump/05.png</key>
+            <key type="filename">main/guy/jump/06.png</key>
+            <key type="filename">main/guy/jump/07.png</key>
+            <key type="filename">main/guy/jump/08.png</key>
+            <key type="filename">main/guy/jump/09.png</key>
+            <key type="filename">main/guy/jump/10.png</key>
+            <key type="filename">main/guy/jump/11.png</key>
+            <key type="filename">main/guy/jump/13.png</key>
+            <key type="filename">main/guy/jump/14.png</key>
+            <key type="filename">main/guy/jump/15.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>30,38,60,75</rect>
+                <key>scale9Paddings</key>
+                <rect>30,38,60,75</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
