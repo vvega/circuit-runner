@@ -3,22 +3,20 @@ import { LoadScene } from "./scenes/preloader";
 import { PlayScene } from "./scenes/gameplay";
 import { EndScene } from "./scenes/endcard";
 
-class CircuitRunner extends Phaser.Game {
-    container: any;
-    atlas: any;
-
-    constructor(config: any) {
-        super(config);
-        this.scene.add("preloader", LoadScene, true);
-        this.scene.add("gameplay", PlayScene);
-        this.scene.add("endcard", EndScene);
-    }
-}
-
-let game: CircuitRunner = new CircuitRunner({
+let game: any = new Phaser.Game({
     width: 450,
     height: 720,
-    backgroundColor: "#fff"
+    backgroundColor: "#fff",
+    scene: {
+        preload: function() {
+            console.log("In preload")
+        },
+        create: function() {
+            this.scene.add("preloader", LoadScene, true);
+            this.scene.add("gameplay", PlayScene);
+            this.scene.add("endcard", EndScene);
+        }
+    }
 });
 
 export { game }

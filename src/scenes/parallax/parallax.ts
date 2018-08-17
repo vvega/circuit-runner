@@ -5,6 +5,7 @@ export class ParallaxScene extends Phaser.Scene {
     layers: ParallaxLayer[];
     layerData: Object[];
     velocity: number;
+    add: any;
 
     constructor(...layerData: Object[][]) {
         super({active: true});
@@ -14,15 +15,19 @@ export class ParallaxScene extends Phaser.Scene {
     }
 
     create() {
+        let layer: ParallaxLayer;
+
         for(let i in this.layerData) {
-            let layer: ParallaxLayer = this.add.existing(new ParallaxLayer(this, this.layerData[i]));
+            layer = this.add.existing(new ParallaxLayer(this, this.velocity * (i*2+1), 3 * (i+1), this.layerData[i]));
             this.layers.push(layer);
+
+            layer.init();
         }
     }
 
     update() {
         for(let i = this.layers.length - 1; i >= 0; i--) {
-            this.layers[i].y += this.velocity * (i*2+1);
+            this.layers[i].update();
         }
     }
 }

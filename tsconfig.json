@@ -5,8 +5,11 @@
     "module": "es6",
     "target": "es5",
     "sourceMap": true,
-    "allowJs": true
+    "allowJs": true,
   },
+  "files": [
+      "./phaser.d.ts"
+  ],
   "include": [
       "./src/**/*"
   ]
