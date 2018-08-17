@@ -26,3 +26,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 * Update .gitignore to exclude .vscode directory
 * Scenes defined on game construction
 * Refactor to support scene-based layers
+* Building pool in place per layer
+* Using only "foreground" buildings to prepare for depth movement

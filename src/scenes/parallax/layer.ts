@@ -18,15 +18,13 @@ export class ParallaxLayer extends Phaser.GameObjects.Container {
         this.velocity = velocity;
         this.pool = new BuildingPool(scene, maxBuildings * 2, textures);
         this.maxBuildings = maxBuildings;
-        this.setScale(1 - this.velocity, 1 - this.velocity/10);
     }
 
     init() {
         let building;
 
         for(let i = 0; i < this.maxBuildings; i++) {
-            building = this.pool.spawnBuilding(Math.random()*game.canvas.width, game.canvas.height/2);
-           // console.log(building)
+            building = this.pool.spawnBuilding((game.canvas.width/this.maxBuildings) * i, game.canvas.height/2);
             this.add(building);
         }
     }
@@ -35,10 +33,7 @@ export class ParallaxLayer extends Phaser.GameObjects.Container {
         let building;
 
         this.y += this.velocity;
-
-        if(this.y % game.canvas.height/2 === 0) {
-            this.pool.spawnBuilding();
-        }
+/*
 
         for(let i = 0; i < this.pool.buildings.length; i++) {
             building = this.pool.buildings[i];
@@ -50,6 +45,6 @@ export class ParallaxLayer extends Phaser.GameObjects.Container {
                 console.log('reached the top')
                 
             }
-        }
+        }*/
     }
 }

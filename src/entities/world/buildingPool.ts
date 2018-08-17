@@ -22,12 +22,12 @@ export class BuildingPool {
         let textureName: String;
 
         textureName = this.textureNames[Math.floor(Math.random()*this.textureNames.length)];
-        return new Building(this.scene, Math.random() * game.canvas.width, Math.random() * game.canvas.height, "atlas", textureName);
+        return new Building(this.scene, Math.random() * game.canvas.width, Math.random() * game.canvas.height, textureName);
     }
 
     spawnBuilding(x: Number, y: Number) {
         console.log("spawning")
-        let deadBuildings: Building[] = this.buildings.filter((el) => !el.alive);
+        let deadBuildings: Building[] = this.buildings.filter((el) => !el.active);
         let spawned: Building;
     
         if(deadBuildings.length) {
@@ -37,8 +37,9 @@ export class BuildingPool {
             spawned = this._createBuilding();
         }
 
-        spawned.setPosition(x || Math.random() * game.canvas.width, y || Math.random() * -1 * game.canvas.height/2);
         spawned.setTexture("atlas", this.textureNames[Math.floor(Math.random()*this.textureNames.length)]);
+        spawned.x = (x || Math.random() * game.canvas.width);
+        spawned.y = (y || Math.random() * -1 * game.canvas.height/2));
 
         return spawned;
     }
