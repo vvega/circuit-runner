@@ -25,26 +25,9 @@ export class ParallaxLayer extends Phaser.GameObjects.Container {
 
         for(let i = 0; i < this.maxBuildings; i++) {
             building = this.pool.spawnBuilding((game.canvas.width/this.maxBuildings) * i, game.canvas.height/2);
-            this.add(building);
         }
     }
 
     update() {
-        let building;
-
-        this.y += this.velocity;
-/*
-
-        for(let i = 0; i < this.pool.buildings.length; i++) {
-            building = this.pool.buildings[i];
-
-            if(!building) continue;
-    
-            if(building.displayOriginY > game.canvas.height) {
-                building.kill();
-                console.log('reached the top')
-                
-            }
-        }*/
     }
 }

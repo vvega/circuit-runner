@@ -12,17 +12,17 @@ export class BuildingPool {
         this.scene = scene;
 
         for(let i = 0; i < max; i++) {
-            building = this._createBuilding();
+            building = this._createBuilding(i);
             building.kill();
             this.buildings.push(building));
         }
     }
 
-    _createBuilding() {
+    _createBuilding(i) {
         let textureName: String;
 
         textureName = this.textureNames[Math.floor(Math.random()*this.textureNames.length)];
-        return new Building(this.scene, Math.random() * game.canvas.width, Math.random() * game.canvas.height, textureName);
+        return new Building(this.scene, (Math.random()*game.canvas.width * (Math.random() > .5 ? -1 : 1)), Math.random()*game.canvas.height/2, i * 2000, textureName);
     }
 
     spawnBuilding(x: Number, y: Number) {
@@ -37,7 +37,7 @@ export class BuildingPool {
             spawned = this._createBuilding();
         }
 
-        spawned.setTexture("atlas", this.textureNames[Math.floor(Math.random()*this.textureNames.length)]);
+  // spawned.setTexture("atlas", this.textureNames[Math.floor(Math.random()*this.textureNames.length)]);
         spawned.x = (x || Math.random() * game.canvas.width);
         spawned.y = (y || Math.random() * -1 * game.canvas.height/2));
 

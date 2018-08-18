@@ -1,5 +1,7 @@
 import * as Phaser from "./../../../node_modules/phaser/dist/phaser.js";
 import { ParallaxLayer } from "./layer";
+import { BuildingPool } from "./../../entities/world/buildingPool";
+import { Building } from "./../../entities/world/building";
 
 export class ParallaxScene extends Phaser.Scene {
     layers: ParallaxLayer[];
@@ -16,20 +18,28 @@ export class ParallaxScene extends Phaser.Scene {
 
     create() {
         let layer: ParallaxLayer;
+        let building: Building;
 
-        for(let i = 0; i < 5; i++) {
-            layer = this.add.existing(new ParallaxLayer(this, this.velocity * (i*2+1), 1 * (i+1), this.layerData[0]));
-            layer.setScale(0.6 + (i/10))
-            layer.setAlpha(0.5 + (i/10));
-            this.layers.push(layer);
+        this.threeDeeCam = this.cameras3d.add().setPosition(0,0,20000);
 
-            layer.init();
+        let buildingPool = new BuildingPool(this, 200, this.layerData[0]);
+        for(let i = 0; i < 150; i++) {
+            building = buildingPool.spawnBuilding();
+
+            this.threeDeeCam.add(building);
+            this.threeDeeCam.displayList.add(building.gameObject);
+            this.threeDeeCam.updateList.add(building.gameObject);
         }
+
+        this.input.on("pointerdown", this.shiftForward, this);
+    }
+
+    shiftForward(x, y) {
+        //TODO
     }
 
     update() {
-        for(let i = this.layers.length - 1; i >= 0; i--) {
-            this.layers[i].update();
-        }
+        this.threeDeeCam.z -= 15;
+        this.threeDeeCam.update();
     }
 }
